@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>图片画廊</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+<body>
+<div class="box" onselectstart="return false">
+	<div class="photo">
+		<div class="rotate photo-front" onclick="turn(this)">
+			<div class="side front">
+			<p class="img"><img src="{{img}}"></p>
+				<p class="caption">{{caption}}</p>
+			</div>
+			<div class="side back">
+				<p class="desc"><span>成员:</span>{{description}}</p>
+			</div>
+		</div>
+	</div>
+</div> 
+
+	
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="control.js"></script>
+</body>
+</html>
